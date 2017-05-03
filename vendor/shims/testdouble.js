@@ -1,9 +1,12 @@
-/* globals td */
+(function() {
+  function vendorModule() {
+    'use strict';
 
-define('testdouble', [], function() {
-  "use strict";
+    return {
+      'default': self['td'],
+      __esModule: true,
+    };
+  }
 
-  return {
-    'default': td
-  };
-});
+  define('testdouble', [], vendorModule);
+})();

@@ -1,22 +1,24 @@
 /* jshint node: true */
 'use strict';
+
 var path = require('path');
+var Funnel = require('broccoli-funnel');
+var MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cli-testdouble',
 
-  included: function included(app) {
-    if (app.app) {
-      app = app.app;
-    }
-    this.app = app;
+  included(app) {
+    this._super.included.apply(this, arguments);
+    app.import('vendor/testdouble.js', { type: 'test' });
+    app.import('vendor/shims/testdouble.js', { type: 'test' });
+  },
 
-    app.import('bower_components/testdouble/dist/testdouble.js');
-    app.import('vendor/shims/testdouble.js', {
-      type: 'vendor',
-      exports: {
-        'testdouble': ['default']
-      }
+  treeForVendor(vendorTree) {
+    var tdTree = new Funnel(path.join(this.project.root, 'node_modules', 'testdouble', 'dist'), {
+      files: ['testdouble.js']
     });
+
+    return new MergeTrees([vendorTree, tdTree]);
   }
 };

@@ -15,7 +15,11 @@
   "bugs": {
     "url": "https://github.com/isleofcode/ember-cli-testdouble/issues"
   },
-  "dependences": {},
+  "dependencies": {
+    "broccoli-funnel": "^1.2.0",
+    "broccoli-merge-trees": "^2.0.0",
+    "testdouble": "^2.1.2"    
+  },
   "devDependencies": {},
   "keywords": [
     "ember-addon",
