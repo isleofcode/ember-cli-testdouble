@@ -8,6 +8,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('testdouble', 'testdouble/testdouble.js#^1.4.2');
+    return this.addPackageToProject('testdouble', '^2.0.0');
   }
 };
