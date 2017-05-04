@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-testdouble",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shim for testdouble / ember-cli",
   "author": {
     "name": "Alex Blom",
@@ -18,7 +18,7 @@
   "dependencies": {
     "broccoli-funnel": "^1.2.0",
     "broccoli-merge-trees": "^2.0.0",
-    "testdouble": "^2.1.2"    
+    "testdouble": "^2.1.2"
   },
   "devDependencies": {},
   "keywords": [
