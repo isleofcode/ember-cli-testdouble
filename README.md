@@ -1,6 +1,6 @@
 # Ember-cli-testdouble
 
-Shim for testdouble / ember-cli"
+Shim for testdouble / ember-cli
 
 ## Usage
 
@@ -13,3 +13,8 @@ Then import as follows:
 ```
 import td from 'testdouble';
 ```
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
