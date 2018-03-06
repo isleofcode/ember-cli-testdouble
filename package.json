@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-testdouble",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Shim for testdouble / ember-cli",
   "author": {
     "name": "Alex Blom",
