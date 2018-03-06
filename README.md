@@ -1,6 +1,6 @@
 # Ember-cli-testdouble
 
-Shim for testdouble / ember-cli"
+Shim for testdouble / ember-cli
 
 ## Usage
 
