@@ -18,7 +18,7 @@ module("Test Helpers | stub-service", function(hooks) {
 
   module("invoking without `hooks`", function(hooks) {
     hooks.beforeEach(function() {
-      stubService("to-stub");
+      this.service = stubService("to-stub");
     });
 
     test("it can replace a service", function(assert) {
@@ -26,6 +26,11 @@ module("Test Helpers | stub-service", function(hooks) {
       service.method();
 
       assert.verify(service.method());
+      assert.equal(
+        service,
+        this.service,
+        "Returns a references to the stubbed service"
+      );
     });
   });
 });

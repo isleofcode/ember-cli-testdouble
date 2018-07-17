@@ -24,13 +24,11 @@ Included is a function that can replace a service with one stubbed using [`td.ob
 import td from "testdouble";
 import { stubService } from "ember-cli-testdouble/test-support";
 
-test("verifying a method invocation", function(assert) {
-  assert.expect(0); // Won't actually use `assert` in this test
+test("verifying a method invocation", function() {
+  // `stubService` returns a reference to the servive
+  let someStubbedService = stubService("some-service");
 
-  stubService("some-service");
-
-  let someService = this.owner.lookup("service:some-service");
-  someService.method();
+  // Do something that would call `method()` on the service
 
   td.verify(someService.method()); // Passes!
 });

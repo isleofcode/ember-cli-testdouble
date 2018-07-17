@@ -35,7 +35,7 @@ export default function stubService() {
     let [name] = arguments;
     let { owner } = getContext();
 
-    replace(owner, name);
+    return replace(owner, name);
   } else {
     throw new Error("Unexpected number of arguments");
   }
