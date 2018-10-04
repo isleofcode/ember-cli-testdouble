@@ -10,6 +10,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addPackageToProject('testdouble', '^2.0.0');
+    return this.addPackageToProject('testdouble', '^3.0.0');
   }
 };
