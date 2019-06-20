@@ -2071,6 +2071,14 @@ ember-cli-test-loader@^2.2.0:
   dependencies:
     ember-cli-babel "^6.8.1"
 
+ember-cli-testdouble-qunit@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-testdouble-qunit/-/ember-cli-testdouble-qunit-2.0.2.tgz#4edbe71e71d1abff101cb36e780a24586e8ba829"
+  dependencies:
+    broccoli-funnel "^2.0.1"
+    ember-cli-babel "^6.6.0"
+    testdouble-qunit "^2.0.2"
+
 ember-cli-uglify@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/ember-cli-uglify/-/ember-cli-uglify-2.0.2.tgz#12becdaf1a2e6f0cdbd386b1d5f5a2d0540347d3"
@@ -5895,6 +5903,10 @@ temp@0.8.3:
   dependencies:
     os-tmpdir "^1.0.0"
     rimraf "~2.2.6"
+
+testdouble-qunit@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/testdouble-qunit/-/testdouble-qunit-2.0.2.tgz#740393c867901b9a814882b50f4c94a9e343fab9"
 
 testdouble@^3.5.2:
   version "3.5.2"
